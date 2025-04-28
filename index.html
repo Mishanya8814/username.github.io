@@ -11,11 +11,60 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            padding-top: 80px; /* Добавляем отступ для фиксированной панели */
         }
+        
+        /* Стили для фиксированной навигационной панели */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #5a3e36;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+        
+        .nav-logo {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: #b08a6d;
+        }
+        
         h1 {
             text-align: center;
             color: #5a3e36;
+            margin-top: 20px;
         }
+        
         .container {
             background: white;
             max-width: 900px;
@@ -24,12 +73,14 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
         }
+        
         .person {
             margin: 30px 0;
             padding: 20px;
             background: #f9f9f9;
             border-left: 5px solid #b08a6d;
         }
+        
         .person img {
             max-width: 150px;
             float: left;
@@ -37,6 +88,7 @@
             margin-bottom: 10px;
             border-radius: 10px;
         }
+        
         blockquote {
             margin: 10px 0;
             padding-left: 15px;
@@ -44,15 +96,30 @@
             font-style: italic;
             color: #555;
         }
+        
         p {
             text-align: justify;
         }
+        
         .clear {
             clear: both;
         }
     </style>
 </head>
 <body>
+    <!-- Фиксированная навигационная панель -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Колобок</a>
+            <div class="nav-buttons">
+                <a href="#home" class="nav-button">Главная</a>
+                <a href="#story" class="nav-button">История</a>
+                <a href="#characters" class="nav-button">Персонажи</a>
+                <a href="#contact" class="nav-button">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>Колобок. Последний путь</h1>
 
