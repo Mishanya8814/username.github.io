@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О нашей компании | Колобок</title>
+    <!-- Подключаем те же стили, что и в index.html -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e7;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #5a3e36;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+        
+        .nav-logo {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: #b08a6d;
+        }
+        
+        .container {
+            background: white;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        h1, h2 {
+            color: #5a3e36;
+        }
+        
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #b08a6d;
+        }
+        
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация (такая же, как на других страницах) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Колобок</a>
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-button">Главная</a>
+                <a href="story.html" class="nav-button">История</a>
+                <a href="characters.html" class="nav-button">Персонажи</a>
+                <a href="about.html" class="nav-button">О компании</a>
+                <a href="contact.html" class="nav-button">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>О нашей компании</h1>
+        
+        <h2>Кто мы?</h2>
+        <p>Мы - команда энтузиастов, посвятивших свою жизнь изучению и сохранению народных сказок. Наша миссия - делать классические истории доступными для новых поколений.</p>
+        
+        <h2>Наша история</h2>
+        <p>Основанная в 2010 году, наша компания начинала с небольших публикаций, а теперь мы - ведущий ресурс по сказочному фольклору в Восточной Европе.</p>
+        
+        <h2>Наша команда</h2>
+        
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Мария Иванова">
+            <div>
+                <h3>Мария Иванова</h3>
+                <p>Главный исследователь фольклора, доктор филологических наук</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Петр Сидоров">
+            <div>
+                <h3>Петр Сидоров</h3>
+                <p>Арт-директор, иллюстратор</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Анна Петрова">
+            <div>
+                <h3>Анна Петрова</h3>
+                <p>Редактор, специалист по детской литературе</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
