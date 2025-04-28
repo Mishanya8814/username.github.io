@@ -11,8 +11,54 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            padding-top: 80px; /* Добавляем отступ для навигации */
             max-width: 900px;
             margin: 0 auto;
+        }
+        
+        /* Стили для фиксированной навигации */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #5a3e36;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .nav-logo {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: #b08a6d;
         }
         
         h1 {
@@ -47,6 +93,19 @@
     </style>
 </head>
 <body>
+    <!-- Фиксированная навигационная панель -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ТАГ</a>
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Главная</a>
+                <a href="#" class="nav-button">Новости</a>
+                <a href="#" class="nav-button">Расследования</a>
+                <a href="#" class="nav-button">О нас</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="content">
         <h1>Лиса - убийца</h1>
         
