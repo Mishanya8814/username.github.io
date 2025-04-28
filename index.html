@@ -2,195 +2,114 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Колобок. Последний путь</title>
+    <title>Колобок - Главная</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fff8e7; /* теплый фон */
+            background-color: #fff8e7;
             color: #333;
-            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            padding-top: 80px; /* Добавляем отступ для фиксированной панели */
+            padding: 0;
         }
         
-        /* Стили для фиксированной навигационной панели */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+        .header {
             background-color: #5a3e36;
-            padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-        
-        .nav-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 30px;
-        }
-        
-        .nav-logo {
             color: white;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        
-        .nav-buttons {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .nav-button {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        .nav-button:hover {
-            background-color: #b08a6d;
-        }
-        
-        h1 {
             text-align: center;
-            color: #5a3e36;
-            margin-top: 20px;
+            padding: 60px 0;
+        }
+        
+        .main-title {
+            font-size: 3em;
+            margin-bottom: 20px;
         }
         
         .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .link-card {
             background: white;
-            max-width: 900px;
-            margin: auto;
+            border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
         
-        .person {
-            margin: 30px 0;
-            padding: 20px;
-            background: #f9f9f9;
-            border-left: 5px solid #b08a6d;
+        .link-card:hover {
+            transform: translateY(-10px);
         }
         
-        .person img {
-            max-width: 150px;
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 10px;
-            border-radius: 10px;
+        .link-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
         
-        blockquote {
-            margin: 10px 0;
-            padding-left: 15px;
-            border-left: 3px solid #ccc;
-            font-style: italic;
-            color: #555;
+        .link-card h2 {
+            color: #5a3e36;
+            margin-bottom: 15px;
         }
         
-        p {
-            text-align: justify;
-        }
-        
-        .clear {
-            clear: both;
+        .link-button {
+            display: inline-block;
+            background-color: #5a3e36;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
-    <!-- Фиксированная навигационная панель -->
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-logo">Колобок</a>
-        <div class="nav-buttons">
-            <a href="index.html" class="nav-button">Главная</a>
-            <a href="story.html" class="nav-button">История</a>
-            <a href="characters.html" class="nav-button">Персонажи</a>
-        </div>
+    <div class="header">
+        <h1 class="main-title">Колобок</h1>
+        <p>Сказочная история с неожиданным концом</p>
     </div>
-</nav>
-
+    
     <div class="container">
-        <h1>Колобок. Последний путь</h1>
-
-        <p>Весна. Небольшая деревня на окраине леса. Ни дорог, ни связи, ни подозрений. Казалось бы, обычный тихий посёлок. Но именно отсюда началась история, которая потрясла всё сказочное сообщество. Простой на вид хлебушек превратился в загадку, которую следователям предстояло разгадать.</p>
-
-        <p>Он исчез, оставив после себя панику, следы муки и множество вопросов.</p>
-
-        <p>Согласно материалам дела, всё началось утром примерно в 6.30. В одном доме на окраине деревни Бабка решила испечь хлеб. Остатки муки, вода из колодца, изюм – старинный рецепт. Ничего необычного. После того как хлеб испёкся, старушка поставила его остывать на окошко. Она назвала это хлебобулочное изделие Колобком.</p>
-
-        <p>Но в какой-то момент — произошло невозможное. Колобок ожил. По словам потерпевшей, он дёрнул бровью, а через несколько секунд… сбежал. Выпрыгнул в окно и покатился куда-то в даль.</p>
-
-        <div class="person">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Babka_pechka.jpg" alt="Бабка">
-            <h3>Личное дело Бабки (пострадавшая):</h3>
-            <p>Жительница сказочной деревни — 64 года, проживает вместе с Дедом в деревянной избе на окраине деревни.</p>
-            <blockquote>«Я достала Колобка из печи и поставила его на окошко, чтоб остыл поскорее. Пошла печку закрыть, поворачиваюсь обратно, а он весь задёргался, зашевелился, посмотрел на меня так и прыгнул вон туды в окошко и всё!»</blockquote>
-            <div class="clear"></div>
+        <div class="links-grid">
+            <div class="link-card">
+                <img src="https://i.imgur.com/JqYeZVL.png" alt="История">
+                <h2>Полная история</h2>
+                <p>Прочитайте классическую сказку с современным взглядом</p>
+                <a href="story.html" class="link-button">Читать</a>
+            </div>
+            
+            <div class="link-card">
+                <img src="https://i.imgur.com/8Km9tLL.png" alt="Персонажи">
+                <h2>Персонажи</h2>
+                <p>Все герои сказки и их характеристики</p>
+                <a href="characters.html" class="link-button">Смотреть</a>
+            </div>
+            
+            <div class="link-card">
+                <img src="https://i.imgur.com/mW4eZvF.png" alt="О компании">
+                <h2>О проекте</h2>
+                <p>Как создавался этот сайт и кто над ним работал</p>
+                <a href="about.html" class="link-button">Узнать</a>
+            </div>
+            
+            <div class="link-card">
+                <img src="https://i.imgur.com/7QY9QyT.png" alt="Контакты">
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами для сотрудничества</p>
+                <a href="contact.html" class="link-button">Написать</a>
+            </div>
         </div>
-
-        <p>По предварительным данным, покинув жилище, Колобок направился в сторону леса. Круглый мучной след — всё, что следователи смогли найти на месте произошедшего.</p>
-
-        <p>Первый контакт произошёл примерно через полчаса после пропажи. Это был местный лесной житель Заяц.</p>
-
-        <div class="person">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Rabbit_cartoon.png" alt="Заяц">
-            <h3>Личное дело Зайца (подозреваемый):</h3>
-            <p>Лесной житель — 3 года, ранее в поле зрения следствия не попадал.</p>
-            <blockquote>«Я обнаружил круглое существо, поющие песню. Хотел спросить куда это оно так торопиться. Оно не обратило на меня внимания и укатилось дальше в лес.»</blockquote>
-            <div class="clear"></div>
-        </div>
-
-        <p>Колобок уходил, оставляя после себя недоумение ... и песню.</p>
-
-        <p>Следующим был волк. Фигура неоднозначная. По данным сказочной полиции, ранее был замешан в инциденте с Красной Шапочкой и судим за неоднократные разбои на полянке Трёх поросят.</p>
-
-        <div class="person">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Wolf_cartoon.png" alt="Волк">
-            <h3>Личное дело Волка (подозреваемый):</h3>
-            <p>Лесной житель — 7 лет, ранее судим.</p>
-            <blockquote>«Какой-то шарик катился по тропе и пел песню. Я приготовился к нападению. Однако тот резко ускорился и скрылся от меня.»</blockquote>
-            <div class="clear"></div>
-        </div>
-
-        <p>Последняя попытка перехвата произошла на лесной тропинке. Там Колобок встретился с медведем — мощным, но, как оказалось, нерасторопным.</p>
-
-        <div class="person">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Bear_cartoon.png" alt="Медведь">
-            <h3>Личное дело Медведя (подозреваемый):</h3>
-            <p>Лесной житель — 24 года, ранее в поле зрения следствия не попадал. Оказывал сотрудничество следствию.</p>
-            <blockquote>«Говорили мы не долго. Где-то полминуты. Он был в хорошем настроении, распевал песенку, а как вкусно он пахнул. Я думал съесть его, а он снова начал петь и потом резко убежал. И я так и не успел его даже попробовать. А ведь ловко это он с песней то придумал. Я даже сначала и не понял»</blockquote>
-            <div class="clear"></div>
-        </div>
-
-        <p>Он уходил от всех. Ни одно животное не смогло его задержать. Возможно, это было всего лишь везение.</p>
-
-        <p>Последний контакт произошёл примерно в 12.30 того же дня. Лиса. Хитрая. Опытная. По оперативным данным — опасная.</p>
-
-        <div class="person">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Fox_cartoon.png" alt="Лиса">
-            <h3>Личное дело Лисы (подозреваемая):</h3>
-            <p>Лесной житель — 9 лет, ранее не проходила по нескольким делам в качестве подозреваемой, но её вины доказано не было.</p>
-            <blockquote>«Круглый, жёлтый, румяный шарик прокатился ко мне и начал напевать красивую песню. Я плох слышала и поэтому попросила повторить ещё несколько раз. А потом… он... покатился куда-то дальше. Этот вкусный шарик ещё запнулся два-три раза и с него посыпались крошки.»</blockquote>
-            <div class="clear"></div>
-        </div>
-
-        <p>На самом деле Колобок и правда остановился. Он пел. Долго. Лиса — слушала. Дважды просила его повторить. Но в какой-то момент… На месте преступления следователями был обнаружен рыжий волос, след муки и ... крошки. Генетическая экспертиза подтвердила — это был Колобок.</p>
-
-        <p>После обнаружения улик Лиса была задержана. На допросе она утверждала, что Колобок сам прыгнул ей на язык. Но всё уже было ясно. Это она решила полакомиться Колобком. Лисе вынесли приговор – 5 лет заключения и моральная компенсация старушке в виде 20 мешков муки. Дело было закрыто.</p>
-
-        <p>Он пел о своей свободе. Он гордился тем, что ушёл от всех. Но не знал, что песня не всегда спасает. Особенно, если слушатель — хищник.</p>
-
-        <p><strong>Колобок. Печальный путь. Последний путь.</strong></p>
     </div>
 </body>
 </html>
